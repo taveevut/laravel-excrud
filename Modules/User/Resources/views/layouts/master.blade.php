@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="top-navbar text-right py-2 px-3 bg-white border-bottom">
-                    {{ Auth::guard('user')->user()->id }}
+                    {{-- {{ Auth::guard('user')->user()->id }} --}}
                     {{ Auth::guard('user')->user()->name }}
 
                     <span class="badge badge-warning">
