@@ -19,21 +19,7 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        html,body{
-            background-color: #E5E5E5;
-        }
-        .top-navbar{
-            margin-left: -15px !important;
-            margin-right: -15px !important;
-        }
-        .app-title{
-            margin: 0;
-            margin-bottom: 20px;
-            margin-left: -15px !important;
-            margin-right: -15px !important;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 </head>
 
 <body>
