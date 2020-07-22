@@ -18,7 +18,6 @@ $factory->define(Student::class, function (Faker $faker) {
         'address' => $faker->address,
         'province_id' => rand(1,100),
         'city' => $faker->city,
-        'zip_code' => $faker->postcode,
-        'member_id' => rand(4,15),
+        'zip_code' => $faker->postcode
     ];
 });

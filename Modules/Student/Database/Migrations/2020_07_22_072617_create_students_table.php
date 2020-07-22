@@ -34,8 +34,6 @@ class CreateStudentsTable extends Migration
             $table->string('city')->nullable();
             $table->string('zip_code')->nullable();
             $table->string('remark')->nullable();
-            $table->integer('member_id')->nullable();
-            $table->foreign('member_id')->references('id')->on('members')->onDelete('cascade');
             $table->timestamps();
         });
     }
