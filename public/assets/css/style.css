@@ -1,0 +1,37 @@
+html,
+body {
+    background-color: #E5E5E5;
+}
+
+.hr-or {
+    position: relative;
+    margin: 10px 0;
+    color: #949494;
+}
+
+.hr-or::before,
+.hr-or::after {
+    content: ' ';
+    border-top: 1px solid #b5b5b5;
+    width: 44%;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+
+.hr-or::after {
+    left: auto;
+    right: 0;
+}
+
+.top-navbar {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
+.app-title {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
