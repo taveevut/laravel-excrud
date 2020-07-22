@@ -4,6 +4,7 @@ namespace Modules\Student\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Student\Entities\Student;
 
 class StudentDatabaseSeeder extends Seeder
 {
@@ -16,6 +17,6 @@ class StudentDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call("OthersTableSeeder");
+        factory(Student::class, 100)->create();
     }
 }
