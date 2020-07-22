@@ -46,13 +46,13 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
-        'customer' => [
+        'student' => [
             'driver' => 'session',
-            'provider' => 'customers',
+            'provider' => 'students',
         ],
-        'customer-api' => [
+        'student-api' => [
             'driver' => 'session',
-            'provider' => 'customers',
+            'provider' => 'students',
         ],
     ],
 
