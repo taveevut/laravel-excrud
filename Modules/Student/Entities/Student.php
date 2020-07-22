@@ -1,14 +1,19 @@
 <?php
 
-namespace App;
+namespace Modules\Student\Entities;
 
+use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Modules\Student\Entities\Student;
 
-class User extends Authenticatable
+class Student extends Authenticatable
 {
     use Notifiable;
+
+    protected $guard = 'student';
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +21,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'username', 'password',
     ];
 
     /**
