@@ -8,6 +8,7 @@ use Illuminate\Routing\Controller;
 use Modules\Article\Entities\Article;
 use App\CustomClass\ItopCyberUpload;
 use Storage;
+use Modules\Article\Http\Requests\ArticleStoreRequest;
 
 class ArticleController extends Controller
 {
@@ -104,7 +105,7 @@ class ArticleController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(ArticleStoreRequest $request)
     {
         $article = new Article();
         $article->title = $request->input('title');
@@ -184,7 +185,7 @@ class ArticleController extends Controller
      * @param int $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(ArticleStoreRequest $request, $id)
     {
         $article = Article::findOrFail($id);
         $article->title = $request->input('title');
