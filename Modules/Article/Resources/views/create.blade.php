@@ -86,12 +86,8 @@
                 <div class="tile-footer">
                     <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o fa-fw"></i>บันทึกข้อมูล</button>
                     <button type="reset" class="btn btn-light"><i class="fa fa-times-circle fa-fw"></i>ยกเลิก</button>
-
-                    @if (session('message'))
-                    <div class="alert alert-success mt-2">
-                        {{ session('message') }}
-                    </div>
-                    @endif
+                    
+                    <x-alert/>
                 </div>
             </div>
         </form>
