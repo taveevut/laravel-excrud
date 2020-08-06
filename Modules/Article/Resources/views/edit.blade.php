@@ -48,7 +48,7 @@
                         <div class="form-group col-md-3">
                             <label>วันที่เขียน</label>
                             <div class="input-group">
-                                <input class="form-control datepicker @error('date') is-invalid @enderror" type="text" name="date" placeholder="ระบุวันที่" value="{{ $article->date }}" >
+                                <input class="form-control datepicker @error('date') is-invalid @enderror" type="date" name="date" placeholder="ระบุวันที่" value="{{ $article->date }}" >
                                 <div class="input-group-append"><span class="input-group-text"><i class="fa fa-calendar"></i></span></div>
                                 @error('date')
                                 <span class="invalid-feedback" role="alert">
