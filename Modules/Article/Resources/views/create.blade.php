@@ -22,11 +22,8 @@
                         <div class="form-group col-md-6">
                             <label>หัวข้อ</label>
                             <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" placeholder="ระบุหัวข้อ">
-                            @error('title')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
+                            
+                            <x-invalid-feedback err="title"/>
                         </div>
                         <div class="form-group col-md-6">
                             <label>ลิงค์เชื่อมโยง</label>
@@ -49,31 +46,22 @@
                             <div class="input-group">
                                 <input class="form-control datepicker @error('date') is-invalid @enderror" type="date" name="date" value="{{ old('date') }}" placeholder="ระบุวันที่">
                                 <div class="input-group-append"><span class="input-group-text"><i class="fa fa-calendar"></i></span></div>
-                                @error('date')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
+                                
+                                <x-invalid-feedback err="date"/>
                             </div>
                         </div>
                         <div class="form-group col-md-2">
                             <label>เขียนโดย</label>
                             <input type="text" class="form-control @error('author') is-invalid @enderror" name="author" value="{{ old('author') }}" placeholder="ระบุผู้เขียน">
-                            @error('author')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
+                            
+                            <x-invalid-feedback err="author"/>
                         </div>
                         <div class="form-group col-md-5">
                             <label>หน้าปก</label>
                             <input type="file" name="cover" class="form-control @error('cover') is-invalid @enderror krajee-input" data-msg-placeholder="เลือกไฟล์หน้าปก" accept="image/*">
                             <small class="form-text text-muted">ขนาดรูปภาพที่เหมาะสม 1200 x 630 pixcel (กว้าง x สูง) ภาพจะถูก crop อัตโนมัติ</small>
-                            @error('cover')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                            @enderror
+                            
+                            <x-invalid-feedback err="cover"/>
                         </div>
                     </div>
                     <div class="form-row">
