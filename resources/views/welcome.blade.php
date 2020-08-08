@@ -84,8 +84,11 @@
                     Laravel
                 </div>
                 <hr>
-                <h3>1. Taveevut nakomah</h3>
-                <h3>2. Donrofad Sohud</h3>
+                <h3>1. Taveevut nakomah 2</h3>
+                <h3>2. Ratchamongkol Plunsungkate</h3>
+                <h3>3. Anwarservice</h3>
+
+
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
