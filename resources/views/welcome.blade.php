@@ -85,6 +85,7 @@
                 </div>
                 <hr>
                 <h3>1. Taveevut nakomah</h3>
+                <h3>2. Donrofad Sohud</h3>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
